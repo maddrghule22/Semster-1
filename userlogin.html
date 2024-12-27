@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            text-align: center;
+            color: blue;
+            background-color:violet;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        label{
+            color: blue;
+            font-weight: bold;
+
+        }
+        input[type='email']
+        {
+            color: rgb(117, 24, 24);
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 16px;
+            text-transform: uppercase;
+            border: 2px solid red;
+            background-color: burlywood;
+        }
+        input[type='password']
+        {
+            color: rgb(117, 24, 24);
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 16px;
+            text-transform: uppercase;
+            border: 2px solid red;
+            background-color: burlywood;
+        }
+        .c1
+        {color: blue;
+        background-color: lightblue;
+        border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table border="1" style="border-collapse:collapse;
+        text-align:center;color: blue;
+        background-color: bisque;" >
+        <caption>UserLogin</caption>
+        <tr>
+            <th><label>Enter Email Id </label></th>
+            <td><input type="email" name="username" id="email" autofocus required></td>
+        </tr>
+        <tr>
+            <th>
+                <label>Password</label>
+            </th>
+            <td><input type="password" name="txtpass" id="pwd"></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit" value="submit"class="c1"><input type="reset" value="reset" class="c1"> </td>
+        </tr>
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,95 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh; /* Full height of the viewport */
+}
+
+/* Left Side Styles */
+.left-side {
+    width: 25%;
+    background-color: #f0f0f0; /* Light background for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.left-side img {
+    max-width: 100%; /* Responsive image */
+    max-height: 100%; /* Ensure the image does not exceed the height of the container */
+    object-fit: cover; /* Cover the area while maintaining aspect ratio */
+}
+
+/* Right Side Styles */
+.right-side {
+    width: 75%;
+    background-color: #ffffff; /* White background for the form */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.form-container {
+    max-width: 400px; /* Max width for the form */
+    width: 100%; /* Full width within the right side */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column; /* Stack the sides on smaller screens */
+    }
+
+    .left-side, .right-side {
+        width: 100%; /* Full width for both sides */
+        height: auto; /* Auto height for stacking */
+    }
+
+    .form-container {
+        max-width: 90%; /* Max width for the form on smaller screens */
+    }
+}

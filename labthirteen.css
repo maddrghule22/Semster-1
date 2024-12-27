@@ -1,0 +1,22 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+    color: rgb(3, 18, 157);
+    text-decoration: underline;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+    background-color: rgba(234, 217, 197, 0.8);
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+h2{
+    background-color: rgba(152, 166, 178,0.8);
+    text-align: center;
+}
